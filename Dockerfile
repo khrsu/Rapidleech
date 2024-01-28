@@ -1,5 +1,5 @@
 # Gunakan base image PHP 7.4
-FROM php:7.4-apache
+FROM php:7.4-cli
 
 # Copy source code ke direktori /var/www/html di dalam container
 COPY . /var/www/html
