@@ -7,5 +7,8 @@ COPY . /var/www/html
 # Set the permission to 777 for all files
 RUN chmod -R 777 /var/www/html
 
+# Add ServerName to apache2.conf
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+
 # Expose port 80 for the web server
 EXPOSE 80
