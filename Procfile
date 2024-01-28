@@ -1,1 +1,1 @@
-web: php -S localhost:6021
+web: php -S 0.0.0.0:5000
