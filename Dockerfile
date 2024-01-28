@@ -11,4 +11,3 @@ RUN chmod -R 777 /var/www/html
 #RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Expose port 80 for the web server
-RUN php -S localhost:6021
