@@ -4,7 +4,9 @@ FROM php:7.4-apache
 # Copy source code ke direktori /var/www/html di dalam container
 COPY . /var/www/html
 
-RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+WORKDIR /var/www/html
+
+#RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Expose port 80
-EXPOSE 80
+#EXPOSE 80
