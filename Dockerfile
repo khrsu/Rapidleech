@@ -1,7 +1,8 @@
-FROM php:7.4-alpine
+# Gunakan base image PHP 7.4
+FROM php:7.4-apache
 
-WORKDIR /root
+# Copy source code ke direktori /var/www/html di dalam container
+COPY . /var/www/html
 
-COPY . .
-
-CMD ["php", "-S", "localhost:8000"]
+# Expose port 80
+EXPOSE 80
