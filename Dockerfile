@@ -1,5 +1,5 @@
 # Use PHP 7.2 as the base image
-FROM ubuntu:latest
+FROM ubuntu:20.04
 
 # Copy the application files to the /var/www/html directory
 COPY . /var/www/html
