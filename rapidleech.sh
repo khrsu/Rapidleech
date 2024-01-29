@@ -22,7 +22,3 @@ chmod 777 configs &&
 chmod 777 configs/files.lst &&
 rm -rf rar &&  wget https://rarlab.com/rar/rarlinux-x64-612.tar.gz &&  tar -xvf rarlinux-x64-612.tar.gz &&  rm -f rarlinux-x64-612.tar.gz &&
 chmod -R 777 rar &&  chmod -R 777 rar/* &&
-snap install core;  snap refresh core &&
-snap install --classic certbot &&
-ln -s /snap/bin/certbot /usr/bin/certbot &&
-certbot --apache
